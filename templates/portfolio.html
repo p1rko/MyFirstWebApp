@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Portfolio??</title>
-    </head>
-    <body>
-        <h1>What is portfolio?</h1>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
+{% extends "base.html" %}
 
-    </body>
-</html>
+{% block title %}
+    <title>Portfolio</title>
+{% endblock title %}
+
+{% block content %}
+    <h1>What is portfolio?</h1>
+{% endblock content %}

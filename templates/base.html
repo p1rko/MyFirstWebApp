@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        {% block title %}
+        {% endblock title %}
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+    <body>
+        <h1>Sup my g, welcome to the good side</h1>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/portfolio">Portfolio</a>
+        <br>
+        <br>
+
+
+    {% block content %}
+    {% endblock content %}
+
+    </body>
+</html>

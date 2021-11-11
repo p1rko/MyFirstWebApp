@@ -1,12 +1,21 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>About First Web App</title>
-    </head>
-    <body>
-        <h1>About something...</h1>
-        <a href="/">Home</a>
-        <a href="/portfolio">Portfolio</a>
-    </body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}
+ <title>About</title>
+{% endblock title %}
+
+{% block content %}
+<p>Ma klele je about </p>
+{% if name %}
+<p>O {{ name }} hojla a bi se eno sporočilo poslal</p>
+{% endif %}
+<form method="post" action="/about">
+ <input type="text" name="name" placeholder="Your name">
+ <input type="text" name="email" placeholder="Your email">
+
+ <textarea name="message" placeholder="Your message goes here"></textarea>
+
+ <button type="submit">Submit</button>
+</form>
+
+{% endblock content %}

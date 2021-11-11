@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>First Web App</title>
-        <link rel="stylesheet" href="/static/css/style.css">
-    </head>
-    <body>
-        <h1>Sup my g, welcome to the good side</h1>
-        <a href="/about">About</a>
-        <a href="/portfolio">Portfolio</a>
-        <br>
-        <br>
-        <img src="/static/img/chicken.jpg" alt="">
-    </body>
-</html>
+{% extends "base.html" %}
+{% block title %}
+    <title>First Web App</title>
+{% endblock title %}
+
+{% block content %}
+    <img src="/static/img/chicken.jpg" alt="">
+    <p>Ma klele je index </p>
+    {{ weather_info }}
+    </br>
+    {{ time }}
+{% endblock content %}
